@@ -1,43 +1,30 @@
 $(document).ready(function(){
-    $(window).scroll(function(){
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
-        }else{
-            $('.navbar').removeClass("sticky");
-        }
-        if(this.scrollY > 500){
-            $('.scroll-up-btn').addClass("show");
-        }else{
-            $('.scroll-up-btn').removeClass("show");
-        }
+    $(".scroll-up-btn").click(function(){
+        $("html").animate({scrollTop: 0});
+        $("html").css("scrollBehavior", "auto");
     });
 
-    $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
-        $('html').css("scrollBehavior", "auto");
+    $(".navbar .menu li a").click(function(){
+        $("html").css("scrollBehavior", "smooth");
     });
 
-    $('.navbar .menu li a').click(function(){
-        $('html').css("scrollBehavior", "smooth");
-    });
-
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
+    $(".menu-btn").click(function(){
+        $(".navbar .menu").toggleClass("active");
+        $(".menu-btn i").toggleClass("active");
     });
     var typed = new Typed(".typing", {
         strings: ["Full-Stack Web Developer."],
-        typeSpeed: 100,
+        typeSpeed: 120,
         backSpeed: 60,
         loop: true
     });
     var typed = new Typed(".typing-2", {
         strings: ["Developer."],
-        typeSpeed: 100,
+        typeSpeed: 120,
         backSpeed: 60,
         loop: true
     });
-    $('.carousel').owlCarousel({
+    $(".carousel").owlCarousel({
         margin: 20,
         loop: true,
         autoplay: true,
@@ -59,4 +46,3 @@ $(document).ready(function(){
         }
     });
 });
-
