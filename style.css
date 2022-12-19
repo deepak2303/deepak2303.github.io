@@ -489,11 +489,13 @@ section .title{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
-    .contact .contact-content .column{
+    .skills-content .column,
+    .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+        display: block;
     }
+
 }
 
 @media (max-width: 690px) {
