@@ -10,14 +10,14 @@
     font-size: 25px;
 }
 
-.monospace {
+/* .monospace {
     font-family: 'Cutive Mono', monospace !important;
-}
+} */
 
 
-body {
+/* body {
     font-family: 'Cutive Mono', monospace;
-}
+} */
 
 @media(min-width:992px){.bag.fixed{width: 784px;}}
 
@@ -27,7 +27,7 @@ pre {
     padding: 10px;
     overflow: auto;
     border-radius: 3px;
-    color: #373727;
+    color: aliceblue;
 }
 
 .calendar {
@@ -35,7 +35,7 @@ pre {
 }
 
 p {
-    color: #444444;
+    color: aliceblue;
 }
 
 img.spinner {
