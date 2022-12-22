@@ -112,7 +112,7 @@ section{
 }
 .home-box{
     border: 1px solid red;
-    /* git  */
+    width: 60%;
 }
 .home-gif{
     border: 1px solid red;
