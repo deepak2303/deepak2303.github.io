@@ -103,20 +103,31 @@ section{
 
 } */
 /* HOME */
-
+.home{
+    /* border: 1px solid red; */
+    width: 100%;
+    background-image: url("https://acegif.com/wp-content/uploads/gifs/starfall-gif-46.gif");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding-top: 10px;
+}
 .home-container{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
     display: flex;
     padding: 30px 0px 30px 0px;
     justify-content: center;
 }
 .home-box{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 60%;
 }
 .home-gif{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 30%;
+}
+.home-gif>img{
+    width: 100%;
+    height: 260px;
 }
 /* ABOUT */
 .about-section{
