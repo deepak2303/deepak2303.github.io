@@ -6,13 +6,18 @@
 body{
     width: 85%;
     margin: auto;
-    background: linear-gradient(to right, #072f45, #044568);
+    background: linear-gradient(to right, #010718, #043e5e);
 }
 .title{
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 150px 0px 50px 0px;
+    margin: 150px 0px 0px 0px;
     text-align: center;
+}
+hr{
+    width: 20%;
+    margin-bottom: 50px;
+    border: 2px solid #FD5B78;
 }
 
 /* NAVBAR */
@@ -25,7 +30,6 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    transition: all .3s ease-in-out;
     font-size: 20px;
 }
 .container{
@@ -37,27 +41,28 @@ body{
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 0;
-    transition: all .3s ease-in-out;
     z-index: 1;
 }
 .container ul{
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 50%;
 }
 .container a{
     color: #fff;
     text-decoration: none;
-    padding: 7px 15px;
-    transition: all .3s ease-in-out;
     z-index: 1;
     font-size: 22px;
     font-weight: bold;
 }
-.navbar a:hover {
+.link:hover{
     z-index: 3;
+    border-bottom: 2px solid #FD5B78;
+    transition: ease .100s;
+    transform: scale(1.1);
+    color: var(--bg-color);
 }
 .navbar span{
     color: #FD5B78;
@@ -76,6 +81,9 @@ body{
     transform: scale(1.1);
     border: 2px solid aliceblue;
     color: #FD5B78;
+}
+.logo{
+    width: 11%;
 }
 /* HOME */
 .home{
@@ -299,4 +307,35 @@ body{
 
 .contact-box div a i{
     margin-right: 20px;
+}
+
+
+/* ANIMATION */
+.home-animate{
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 6s steps(22) infinite alternate;
+    border-right: 3px solid #FD5B78;
+}
+@keyframes text{
+    0%{
+        width: 0ch;
+    }50%{
+        width: 22ch;
+    }
+}
+.nav-animate{
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: next 6s steps(9) infinite alternate;
+    border-right: 3px solid #FD5B78;
+}
+@keyframes next{
+    0%{
+        width: 0ch;
+    }50%{
+        width: 9ch;
+    }
 }
