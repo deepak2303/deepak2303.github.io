@@ -19,22 +19,27 @@
 <body>
     <!-- ....NAVBAR.... -->
 
-    <header>
-         <a href="#" class="logo" ><span>Portfol</span><span>io</span></a>
-         <div class="bx bx-menu" id="menu-icon"></div>
-         <ul class="navlist">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-         </ul>
-         <a class="Resume" href="./Resume/Deshdeepak_Jha.pdf" target="_blank" download="Deshdeepak_Jha_Resume">Resume</a>
-    </header>
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#home" style="font-size: 30px;">Portfol<span>.io</span></a>
+            </div>
+            <ul>
+                <li><a class="current" href="#home">Home</a></li>
+                <li><a class="link" href="#about" data-scroll>About Me</a></li>
+                <li><a class="link" href="#skills" data-scroll>Skills</a></li>
+                <li><a class="link" href="#projects" data-scroll>Projects</a></li>
+                <li><a class="link" href="#contact" data-scroll>Contact</a></li>
+            </ul>
+            <div>
+                <a href="./Resume/Deshdeepak_Jha.pdf" download="Deshdeepak_Resume" class="Resume">Resume</a>
+            </div>
+        </div>
+    </div>
 
     <!-- ....HOME.... -->
 
-    <section class="home" id="home">
+    <div class="home" id="home">
         <h1 class="title">Home</h1>
         <div class="home-container">
             <div class="home-box">
@@ -43,16 +48,16 @@
                 <h5>Java backend developer</h5>
                 <p>I'm a passionate developer with a lot of hunger to learn.</p>
                 <div class="contact-media">
-                    <a href="https://www.linkedin.com/in/deshdeepak-jha/" target="_blank" style="font-size: 30px;"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/deepak2303" target="_blank" style="font-size: 30px;"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/deshdeepak-jha/" target="_blank" ><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/deepak2303" target="_blank" ><i class='bx bxl-github'></i></a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
     <!-- ....ABOUT.... -->
-    <div class="about">
+    <div class="about" id="about">
         <h1 class="title">About Me</h1>
         <div class="about-section">
             <div  class="about-box">
@@ -74,7 +79,7 @@
 
     <!-- ....TECH STACK.... -->
 
-    <div class="tech-stack"></div>
+    <div class="tech-stack" id="tech-stack">
         <h1 class="title">Tech Stack</h1>
         <div class="tech-header">
             <div class="tech-box">
@@ -132,7 +137,7 @@
 
     <!-- ....SKILLS.... -->
 
-    <div class="skills">
+    <div class="skills" id="skills">
         <h1 class="title">Skills</h1>
         <div class="soft-skills">
             <div class="skill-card">
@@ -159,7 +164,7 @@
 
     <!-- ....PROJECTS.... -->
 
-    <div class="projects">
+    <div class="projects" id="projects">
         <h1 class="title">Projects</h1>
         <div class="carousel owl-carousel">
             <div class="card">
@@ -171,9 +176,9 @@
                    <h3>Tech-stack</h3>
                    <p style="width: 12%;display: flex;justify-content: space-between;align-items: center;"><i class="devicon-html5-plain-wordmark colored" style="font-size: 30px;"></i><i class="devicon-css3-plain-wordmark colored" style="font-size: 30px;"></i><i class="devicon-javascript-plain colored" style="font-size: 26px;"></i></p>
                 </div>
-                <div style="display: flex; width: 8%; justify-content: space-between;align-items: center;" >
-                    <a class="link-btn" href="https://github.com/pravin0428/YOOX.com-Clone" target="_blank"><i class="devicon-github-original colored" style="font-size: 25px; margin-top: 10px; margin-bottom: 10px;"></i></a>
-                    <a class="link-btn" href="https://dreamy-daffodil-1c84f7.netlify.app/" target="_blank"><i class="devicon-go-line colored" style="font-size: 25px; margin-top: 10px; margin-bottom: 10px;"></i></a>
+                <div class="proj-link">
+                    <a class="demo" href="https://github.com/pravin0428/YOOX.com-Clone" target="_blank">Code</a>
+                    <a href="https://dreamy-daffodil-1c84f7.netlify.app/" target="_blank">Try It!</a>
                 </div>
             </div>
             <div class="card">
@@ -185,9 +190,9 @@
                    <h3>Tech-stack</h3>
                    <p style="width: 12%;display: flex;justify-content: space-between;align-items: center;"><i class="devicon-html5-plain-wordmark colored" style="font-size: 30px;"></i><i class="devicon-css3-plain-wordmark colored" style="font-size: 30px;"></i><i class="devicon-javascript-plain colored" style="font-size: 26px;"></i></p>
                 </div>
-                <div style="display: flex; width: 8%; justify-content: space-between;align-items: center;" class="target">
-                    <a class="link-btn" href="https://github.com/arun5G/myntra" target="_blank"><i class="devicon-github-original colored" style="font-size: 25px; margin-top: 10px; margin-bottom: 10px;"></i></a>
-                    <a class="link-btn" href="https://luminous-cocada-0f0885.netlify.app/" target="_blank"><i class="devicon-go-line colored" style="font-size: 25px; margin-top: 10px; margin-bottom: 10px;"></i></a>
+                <div class="proj-link">
+                    <a class="demo" href="https://github.com/arun5G/myntra" target="_blank">Code</a>
+                    <a href="https://luminous-cocada-0f0885.netlify.app/" target="_blank">Try It!</a>
                 </div>
             </div>
             <div class="card">
@@ -199,9 +204,9 @@
                    <h3>Tech-stack</h3>
                    <p style="width: 8%;display: flex;justify-content: space-between;align-items: center;"><i class="devicon-html5-plain-wordmark colored" style="font-size: 30px;"></i><i class="devicon-css3-plain-wordmark colored" style="font-size: 30px;"></i>
                 </div>
-                <div style="display: flex; width: 8%; justify-content: space-between;align-items: center;" class="target">
-                    <a class="link-btn" href="https://github.com/deepak2303/ZomatoClone" target="_blank"><i class="devicon-github-original colored" style="font-size: 25px; margin-top: 10px; margin-bottom: 10px;"></i></a>
-                    <a class="link-btn" href="https://inquisitive-concha-52f09d.netlify.app/" target="_blank"><i class="devicon-go-line colored" style="font-size: 25px; margin-top: 10px; margin-bottom: 10px;"></i></a>
+                <div class="proj-link">
+                    <a class="demo" href="https://github.com/deepak2303/ZomatoClone" target="_blank">Code</a>
+                    <a href="https://inquisitive-concha-52f09d.netlify.app/" target="_blank">Try It!</a>
                 </div>
             </div>
         </div>
@@ -230,7 +235,7 @@
 
     <!-- ....CONTACT.... -->
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <h1 class="title">Contact Me</h1>
         <div class="contact-box">
             <div class="media">
@@ -264,5 +269,3 @@
 </html>
 
 <script src="./JS/script.js"> </script>
-
-

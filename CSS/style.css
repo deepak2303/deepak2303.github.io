@@ -14,17 +14,82 @@ body{
     margin: 150px 0px 50px 0px;
     text-align: center;
 }
+
+/* NAVBAR */
+.navbar{
+    /* border: 1px solid red; */
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+    font-size: 20px;
+}
+.container{
+    /* border: 1px solid red; */
+    width: 98%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+.container ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.container a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    font-size: 22px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    z-index: 3;
+}
+.navbar span{
+    color: #FD5B78;
+}
+.Resume{
+    display: inline-block;
+    padding: 9px 30px;
+    border: 2px solid #FD5B78;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: ease .50s;
+    text-decoration: none;
+}
+.Resume:hover{
+    transform: scale(1.1);
+    border: 2px solid aliceblue;
+    color: #FD5B78;
+}
 /* HOME */
 .home{
     /* border: 1px solid red; */
+    position: relative;
+    margin-top: 100px;
     width: 100%;
     background-image: url("https://acegif.com/wp-content/uploads/gifs/starfall-gif-46.gif");
+    /* background-color: black; */
     background-size: 100% 100%;
     border-radius: 10px;
     padding-top: 10px;
 }
 .home-container{
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
     display: flex;
     padding: 30px 0px 30px 0px;
     justify-content: center;
@@ -85,6 +150,7 @@ body{
 }
 .about-text{
     line-height: 30px;
+    text-align: center;
 }
 /* TECH STACK */
 .tech-stack{
@@ -184,10 +250,24 @@ body{
 .owl-dot.active,.owl-dot:hover{
     background: aliceblue !important;
 }
-.link-btn{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+.proj-link{
+    display: flex;
+    margin-top: 15px;
+ }
+.proj-link a{
+    border: 2px solid #FD5B78;
+    padding: 10px 20px 10px 20px;
+    border-radius:30px;
+    margin-bottom:20px;
 }
-
+.proj-link a:hover{
+    transform: scale(1.1);
+    border: 2px solid aliceblue;
+    color: #FD5B78;
+}
+.demo{
+    margin-right: 25px;
+}
 /* GITHUB */
 
 .git{
@@ -198,12 +278,12 @@ body{
 /* CONTACT ME */
 .contact-box{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    font-size: 25px;
+    font-size: 30px;
 }
 .contact-box div{
     width: 50rem;
     margin: auto;
-    margin-bottom: 5px;
+    /* border: 1px solid red; */
 }
 .contact-box div a{
     display: flex;
