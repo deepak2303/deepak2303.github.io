@@ -61,8 +61,6 @@ hr{
     z-index: 3;
     border-bottom: 2px solid #FD5B78;
     transition: ease .100s;
-    transform: scale(1.1);
-    color: var(--bg-color);
 }
 .navbar span{
     color: #FD5B78;
@@ -91,8 +89,8 @@ hr{
     position: relative;
     margin-top: 100px;
     width: 100%;
-    background-image: url("https://acegif.com/wp-content/uploads/gifs/starfall-gif-46.gif");
     /* background-color: black; */
+    background-image: url("https://acegif.com/wp-content/uploads/gifs/starfall-gif-46.gif");
     background-size: 100% 100%;
     border-radius: 10px;
     padding-top: 10px;
@@ -173,7 +171,6 @@ hr{
     text-align: center;
 }
 .tech-box>div{
-    /* border: 1px solid red; */
     width: 80%;
     height: 220px;
     display: grid;
@@ -196,6 +193,17 @@ hr{
 .tech-box i{
     font-size: 80px;
     border: 0px;
+}
+.hibernate-box{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: right;
+    padding-top: 8px;
+}
+.hibernate{
+    width: 80px;
+    height: 70px;
+    /* border: 1px solid red; */
 }
 
 /* SKILLS */
@@ -287,6 +295,7 @@ hr{
 .contact-box{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     font-size: 30px;
+    /* border: 1px solid red; */
 }
 .contact-box div{
     width: 50rem;
@@ -299,6 +308,7 @@ hr{
     justify-content: center;
     text-decoration: none;
     transition: ease .5s;
+    /* height: 80px; */
 }
 
 .contact-box div a:hover{
@@ -315,7 +325,7 @@ hr{
     width: 0ch;
     overflow: hidden;
     white-space: nowrap;
-    animation: text 6s steps(22) infinite alternate;
+    animation: text 7s steps(22) infinite alternate;
     border-right: 3px solid #FD5B78;
 }
 @keyframes text{
