@@ -6,7 +6,7 @@
 body{
     width: 85%;
     margin: auto;
-    background: linear-gradient(to right, #010718, #043e5e);
+    /* background: linear-gradient(to right, #010718, #043e5e); */
 }
 .title{
     font-size: 2.5rem;
