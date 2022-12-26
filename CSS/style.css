@@ -11,7 +11,7 @@ body{
 .title{
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 150px 0px 0px 0px;
+    margin-top: 150px;
     text-align: center;
 }
 hr{
@@ -83,6 +83,7 @@ hr{
 .logo{
     width: 11%;
 }
+
 /* HOME */
 .home{
     /* border: 1px solid red; */
@@ -347,5 +348,73 @@ hr{
         width: 0ch;
     }50%{
         width: 9ch;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .tech-header{
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+    }
+    .soft-skills{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    .soft-skills img{
+        width: 80px;
+        height: 80px;
+    }
+    .hibernate-box{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 870px){
+    .container a{
+        font-size: 10px;
+    }
+    .logo h1{
+        font-size: 10px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .about-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about-image{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    body{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .navbar{
+        position: fixed;
+        height: 60px;
+        border: 1px solid red;
+        width: auto;
+        margin: auto;
+        top: 0;
+        right: 0;
+    }
+    .container{
+        height: 60px;
+    }
+    body{
+        width: 100%;
+        margin: auto;
+    }
+    .title{
+        font-size: 1.5rem;
+        margin-top: 60px;
+    }
+    .contact{
+        border: 1px solid red;
     }
 }
