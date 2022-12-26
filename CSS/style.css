@@ -28,7 +28,6 @@ hr{
     height: 100px;
     z-index: 1000;
     top: 0;
-    left: 0;
     right: 0;
     font-size: 20px;
 }
@@ -397,11 +396,9 @@ hr{
     .navbar{
         position: fixed;
         height: 60px;
-        border: 1px solid red;
         width: auto;
         margin: auto;
-        top: 0;
-        right: 0;
+        left: 0;
     }
     .container{
         height: 60px;
@@ -413,8 +410,5 @@ hr{
     .title{
         font-size: 1.5rem;
         margin-top: 60px;
-    }
-    .contact{
-        border: 1px solid red;
     }
 }
