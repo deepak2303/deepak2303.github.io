@@ -42,7 +42,7 @@
   .calendar-graph text.wday,
   .calendar-graph text.month {
       font-size: 10px;
-      fill: #aaa;
+      fill: aliceblue;
   }
   
   .contrib-legend {
@@ -102,7 +102,7 @@
       line-height: 1.3em;
       font-size: 24px;
       display: block;
-      color: #333;
+      color: #FD5B78;
   }
   
   .calendar img.spinner {
