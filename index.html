@@ -13,10 +13,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/> -->
 </head>
 <body>
     <!-- ....NAVBAR.... -->
@@ -29,10 +25,10 @@
         <div class="logo">
             <h1 href="#home" class="nav-animate">Hello👋</h1>
         </div>
-        <ul>
+        <ul class="parent">
             <li><a class="link" href="#home">Home</a></li>
             <li><a class="link" href="#about" data-scroll>About Me</a></li>
-            <li><a class="link" href="#skills" data-scroll>Skills</a></li>
+            <li><a class="link" href="#tech-stack" data-scroll>Skills</a></li>
             <li><a class="link" href="#projects" data-scroll>Projects</a></li>
             <li><a class="link" href="#contact" data-scroll>Contact</a></li>
         </ul>
@@ -42,6 +38,7 @@
     </header>
     
     <!-- ....HOME.... -->
+    <div id="home"></div>
     <div class="home" id="home">
         <h1 class="title">Home</h1>
         <hr>
@@ -60,6 +57,7 @@
     </div>
 
     <!-- ....ABOUT.... -->
+    <div id="about"></div>
     <div class="about" id="about">
         <h1 class="title">About Me</h1>
         <hr>
@@ -83,6 +81,7 @@
 
     <!-- ....TECH STACK.... -->
 
+    <div id="tech-stack"></div>
     <div class="tech-stack" id="tech-stack">
         <h1 class="title">Tech Stack</h1>
         <hr>
@@ -113,6 +112,10 @@
                     <p>Spring</p>
                 </div>
                 <div class="tech-box">
+                    <img class="hibernate" src="./images/springboot-logo.png" alt="spring-boot">
+                    <p>Spring Boot</p>
+                </div>
+                <div class="tech-box">
                     <img class="hibernate" src="./images/hibernate-logo.png" alt="hibernate">
                     <p>Hibernate</p>
                 </div>
@@ -130,7 +133,7 @@
                 </div>
                 <div class="tech-box">
                     <i class="devicon-visualstudio-plain colored"></i>
-                    <p>Vscode</p>
+                    <p>VScode</p>
                 </div>
             </div>
         </div>
@@ -139,6 +142,7 @@
 
     <!-- ....SKILLS.... -->
 
+    <div id="skills"></div>
     <div class="skills" id="skills">
         <h1 class="title">Soft-Skills</h1>
         <hr>
@@ -167,6 +171,7 @@
 
     <!-- ....PROJECTS.... -->
 
+    <div id="projects"></div>
     <div class="projects" id="projects">
         <h1 class="title">Projects</h1>
         <hr>
@@ -175,7 +180,7 @@
                 <div class="card">
                     <img src="./images/YOOX.png" >
                     <div class="details">
-                       <h1>YOOX.com Clone</h1>
+                       <h1>YOOX Clone</h1>
                        <p>YOOX-Clone is an e-commerce website where you can buy all categories of clothes and fashion accessories.</p>
                        <p>It is a collaborative project, completed by a team of 5 people. In this project, we tried to cover the real time experience of YOOX</p>
                        <h3>Tech-stack</h3>
@@ -183,7 +188,7 @@
                     </div>
                     <div class="proj-link">
                         <a class="demo" href="https://github.com/pravin0428/YOOX.com-Clone" target="_blank">Code</a>
-                        <a href="https://dreamy-daffodil-1c84f7.netlify.app/" target="_blank">Try It!</a>
+                        <a href="https://dreamy-daffodil-1c84f7.netlify.app/" target="_blank">Visit!</a>
                     </div>
                 </div>
             </div>
@@ -191,7 +196,7 @@
                 <div class="card">
                     <img src="./images/Myntra.png" >
                     <div class="details">
-                       <h1>Myntra.com Clone</h1>
+                       <h1>Myntra Clone</h1>
                        <p>Myntra is a major Indian fashion e-commerce company.This clone will give you a sense of the original website.</p>
                        <p>It is a collaborative project, completed by a team of 4 people. In this project, we tried to cover the the real time experience of Myntra Fashion.</p>
                        <h3>Tech-stack</h3>
@@ -199,7 +204,7 @@
                     </div>
                     <div class="proj-link">
                         <a class="demo" href="https://github.com/arun5G/myntra" target="_blank">Code</a>
-                        <a href="https://luminous-cocada-0f0885.netlify.app/" target="_blank">Try It!</a>
+                        <a href="https://luminous-cocada-0f0885.netlify.app/" target="_blank">Visit!</a>
                     </div>
                 </div>
             </div>
@@ -207,7 +212,7 @@
                 <div class="card">
                     <img src="./images/Zomato.png" >
                     <div class="details">
-                       <h1>Zomato.com Clone</h1>
+                       <h1>Zomato Clone</h1>
                        <p>Zomato is an Indian multinational restaurant aggregator and food delivery company.</p>
                        <p>It is a solo project. In this project, I tried to implemet the static experience of Zomato.</p>
                        <h3>Tech-stack</h3>
@@ -215,7 +220,7 @@
                     </div>
                     <div class="proj-link">
                         <a class="demo" href="https://github.com/deepak2303/ZomatoClone" target="_blank">Code</a>
-                        <a href="https://inquisitive-concha-52f09d.netlify.app/" target="_blank">Try It!</a>
+                        <a href="https://inquisitive-concha-52f09d.netlify.app/" target="_blank">Visit!</a>
                     </div>
                 </div>
             </div>
@@ -246,6 +251,7 @@
 
     <!-- ....CONTACT.... -->
 
+    <div id="contact"></div>
     <div class="contact" id="contact">
         <h1 class="title">Contact Me</h1>
         <hr>

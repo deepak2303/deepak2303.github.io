@@ -219,7 +219,8 @@ header ul li a{
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    padding: 0px 5px 0px 5px;
+    padding: 30px 40px 30px 40px;
+    
 }
 .skill-card-logo{
     text-align: center;
@@ -289,9 +290,7 @@ header ul li a{
 
 /* CONTACT ME */
 .contact-box{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     font-size: 30px;
-    /* border: 1px solid red; */
 }
 .contact-box div{
     width: auto;
@@ -449,6 +448,9 @@ header ul li a{
     }
     #check:checked ~ ul{
         left: 0;
+    }
+    .clicked{
+        left: -100%;
     }
     .logo{
         display: none;
