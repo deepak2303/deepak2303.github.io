@@ -16,7 +16,6 @@ hr{
 }
 
 /* NAVBAR  */
-
 header{
     position: fixed;
     top: 0;
@@ -83,17 +82,33 @@ header ul li a{
     border: 2px solid aliceblue;
     color: #FD5B78;
 }
-.check-btn{
-    font-size: 30px;
+.navbar{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.menu-btn, .navbar .parent .cancel-btn{
+    position: absolute;
     color: aliceblue;
-    float: right;
-    line-height: 80px;
+    right: 40px;
+    top: 7px;
+    font-size: 25px;
     cursor: pointer;
+    transition: all 0.3s ease;
     display: none;
 }
-#check{
-    display: none;
+.menu-btn{
+    color: aliceblue;
 }
+.sticky .menu-btn{
+    color: aliceblue;
+}
+.navbar .menu .menu-btn{
+    color: aliceblue;
+}
+
 /* HOME */
 .home{
     /* border: 1px solid red; */
@@ -281,6 +296,7 @@ header ul li a{
 .demo{
     margin-right: 25px;
 }
+
 /* GITHUB */
 
 .git{
@@ -400,6 +416,37 @@ header ul li a{
     }
 }
 @media only screen and (max-width: 870px){
+    .navbar .parent{
+        position: fixed;
+        left: -100%;
+        top: -20px;
+        background: #043e5e;
+        height: 35vh;
+        width: 100%;
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+    .navbar.active .parent{
+        left: 0;
+    }
+    .navbar .parent a{
+        font-size: 20px;
+        display: block;
+        color: aliceblue;
+        margin: 10px 0;
+    }
+    .sticky .parent a:hover{
+        color: #FD5B78;
+    }
+    .menu-btn,.navbar .parent .cancel-btn{
+        display: block;
+    }
+    header{
+        display: flex;
+        align-items: center;
+    }
     body{
         width: 100%;
     }
@@ -422,47 +469,11 @@ header ul li a{
     body{
         width: 100%;
     }
-    .check-btn{
-        display: flex;
-        /* border: 1px solid red; */
-        align-items: center;
-    }
-    header ul{
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        text-align: center;
-        transition: all .5s;
-        display: block;
-        background-color: #043e5e;
-        padding-top: 20px;
-    }
-    .dropdown{
-        width: 60px;
-        height: 60px;
-    }
-    header ul li{
-        /* border: 1px solid red; */
-        margin-bottom: 20px;
-    }
-    header ul li:hover{
-        border-bottom: none;
-    }
-    header ul li a{
-        font-size: 15px;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    .clicked{
-        left: -100%;
+    .navbar{
+        justify-content: start;
     }
     .logo{
         display: none;
-    }
-    .home{
-        margin-top: 200px;
     }
 }
 @media only screen and (max-width: 800px){

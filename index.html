@@ -18,23 +18,28 @@
     <!-- ....NAVBAR.... -->
 
     <header>
-        <input type="checkbox" id="check">
-        <label for="check" class="check-btn">
-            <img class="dropdown" src="./images/dropdown-logo.png" alt="">
-        </label>
-        <div class="logo">
-            <h1 href="#home" class="nav-animate">Hello👋</h1>
+        <div class="navbar">
+            <div class="logo">
+                <h1 href="#home" class="nav-animate">Hello👋</h1>
+            </div>
+            <ul class="parent">
+                <li><a class="link" href="#home">Home</a></li>
+                <li><a class="link" href="#about" data-scroll>About Me</a></li>
+                <li><a class="link" href="#tech-stack" data-scroll>Skills</a></li>
+                <li><a class="link" href="#projects" data-scroll>Projects</a></li>
+                <li><a class="link" href="#contact" data-scroll>Contact</a></li>
+
+                <div class="cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </ul>
+            <div>
+                <a href="./Resume/Deshdeepak_Jha.pdf" download="fw18_0439-Deshdeepak-Jha-Resume" class="Resume" onclick="openresume()">Resume</a>
+            </div> 
         </div>
-        <ul class="parent">
-            <li><a class="link" href="#home">Home</a></li>
-            <li><a class="link" href="#about" data-scroll>About Me</a></li>
-            <li><a class="link" href="#tech-stack" data-scroll>Skills</a></li>
-            <li><a class="link" href="#projects" data-scroll>Projects</a></li>
-            <li><a class="link" href="#contact" data-scroll>Contact</a></li>
-        </ul>
-        <div>
-            <a href="./Resume/Deshdeepak_Jha.pdf" download="fw18_0439-Deshdeepak-Jha-Resume" class="Resume">Resume</a>
-        </div> 
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
     
     <!-- ....HOME.... -->
@@ -75,7 +80,7 @@
                         Aims to leverage knowledge and build some world-class websites while facilitating the organization in achieving functional goals.
                     </p>
                     <div>
-                        <a href="./Resume/Deshdeepak_Jha.pdf" download="fw18_0439-Deshdeepak-Jha-Resume" class="Resume">Resume</a>
+                        <a href="./Resume/Deshdeepak_Jha.pdf" download="fw18_0439-Deshdeepak-Jha-Resume" class="Resume" onclick="openresume()">Resume</a>
                     </div>
                 </div>
             </div>
@@ -123,12 +128,34 @@
                     <p>Hibernate</p>
                 </div>
                 <div class="tech-box">
-                    <i class="devicon-github-original colored"></i>
+                    <i class="devicon-github-original colored" style="color: gray;"></i>
                     <p>Github</p>
                 </div>
                 <div class="tech-box">
                     <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
                     <p>AWS</p>
+                </div>
+                <div class="tech-box">
+                    <i class="devicon-git-plain colored"></i>
+                    <p>Git</p>
+                </div>
+                <div class="tech-box">
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <p>VScode</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tech-stack" id="tech-stack">
+        <h1 class="title">Tools</h1>
+        <hr>
+        <div class="tech-container">
+            <div class="tech-header">
+                <div class="tech-box">
+                    <i class="devicon-github-original colored" style="color: gray;"></i>
+                    <p>Github</p>
                 </div>
                 <div class="tech-box">
                     <i class="devicon-git-plain colored"></i>
@@ -187,7 +214,7 @@
                        <p>YOOX-Clone is an e-commerce website where you can buy all categories of clothes and fashion accessories.</p>
                        <p>It is a collaborative project, completed by a team of 5 people. In this project, we tried to cover the real time experience of YOOX</p>
                        <h3>Tech-stack</h3>
-                       <p style="width: 8%;display: flex;justify-content: space-between;align-items: center;"><i class="devicon-html5-plain colored"></i><i class="devicon-css3-plain colored"></i><i class="devicon-javascript-plain colored"></i></p>
+                       <h5>HTML | CSS | JavaScript</h5>
                     </div>
                     <div class="proj-link">
                         <a class="demo" href="https://github.com/pravin0428/YOOX.com-Clone" target="_blank">Code</a>
@@ -203,7 +230,7 @@
                        <p>Myntra is a major Indian fashion e-commerce company.This clone will give you a sense of the original website.</p>
                        <p>It is a collaborative project, completed by a team of 4 people. In this project, we tried to cover the the real time experience of Myntra Fashion.</p>
                        <h3>Tech-stack</h3>
-                       <p style="width: 8%;display: flex;justify-content: space-between;align-items: center;"><i class="devicon-html5-plain colored"></i><i class="devicon-css3-plain colored"></i><i class="devicon-javascript-plain colored" ></i></p>
+                       <h5>HTML | CSS | JavaScript</h5>
                     </div>
                     <div class="proj-link">
                         <a class="demo" href="https://github.com/arun5G/myntra" target="_blank">Code</a>
@@ -217,13 +244,29 @@
                     <div class="details">
                        <h1>Zomato Clone</h1>
                        <p>Zomato is an Indian multinational restaurant aggregator and food delivery company.</p>
-                       <p>It is a solo project. In this project, I tried to implemet the static experience of Zomato.</p>
+                       <p>It is a solo project. In this project, I tried to implement the static experience of Zomato.</p>
                        <h3>Tech-stack</h3>
-                       <p style="width: 5%;display: flex;justify-content: space-between;align-items: center;"><i class="devicon-html5-plain colored"></i><i class="devicon-css3-plain colored"></i>
+                       <h5>HTML | CSS</h5>
                     </div>
                     <div class="proj-link">
                         <a class="demo" href="https://github.com/deepak2303/ZomatoClone" target="_blank">Code</a>
                         <a href="https://inquisitive-concha-52f09d.netlify.app/" target="_blank">Visit!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./images/HumanResourceManagementSystem.png" >
+                    <div class="details">
+                       <h1>Human Resource Management System</h1>
+                       <p>A human resources management system (HRMS) is a form of Human Resources (HR) software that combines a number of systems and processes to ensure the easy management of human resources, business processes and data.</p>
+                       <p>It is a solo project. In this project, I tried to implement the experience of a Human Resource Management System.</p>
+                       <h3>Tech-stack</h3>
+                       <h5>Java | MySql | Spring</h5>
+                    </div>
+                    <div class="proj-link">
+                        <a class="demo" href="https://github.com/deepak2303/swell-crime-5054" target="_blank">Code</a>
+                        <a href="" target="_blank">Video</a>
                     </div>
                 </div>
             </div>
